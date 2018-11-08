@@ -1,0 +1,23 @@
+body {
+	background-image: url("paper.gif");
+}
+
+h2 {
+	font-family: 'Allerta', Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	line-height: 55px;
+}
+ 
+p {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+div {
+	margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    background-color: lightgreen;
+    padding: 10px;
+}
