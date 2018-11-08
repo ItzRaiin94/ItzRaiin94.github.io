@@ -47,10 +47,10 @@
 				let fl_bonus = 1.35 * bonus_len
 
 				//calculate pp amounts
-				let nm = Math.round(final * 100) / 100;
-				let hd = Math.round((final * 100) * hd_bonus) / 100;
-				let fl = Math.round((final * 100) * fl_bonus) / 100;
-				let hdfl = Math.round((final * 100) * hd_bonus * fl_bonus) / 100;
+				let nm = Math.ceil(final * 100) / 100;
+				let hd = Math.ceil((final * 100) * hd_bonus) / 100;
+				let fl = Math.ceil((final * 100) * fl_bonus) / 100;
+				let hdfl = Math.ceil((final * 100) * hd_bonus * fl_bonus) / 100;
 
 				//add "pp" and mod strings
 				nm += " pp";
@@ -96,7 +96,7 @@
 			function clearFields() {
 				document.getElementById("output2").innerHTML = "";
 				document.getElementById("star_rating").value = "";
-				const ar = document.getElementById("approach_rate").value = "";
+				document.getElementById("approach_rate").value = "";
 				document.getElementById("max_combo").value = "";
 				document.getElementById("player_combo").value = "";
 				document.getElementById("misses").value = "";
