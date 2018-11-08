@@ -32,11 +32,11 @@
 				final *= non_fc_penalty;
 
 				//ar bonus
-				if (ar.value>9) {
+				if (ar > 9) {
 					final *= 1 +  0.1 * (ar - 9.0);
 				}
-				if (ar.value<8) {
-					final *= 1 +  0.025 * (8.0 - ar);
+				if (ar < 9) {
+					final *= 1 +  0.025 * (9.0 - ar);
 				}
 
 				//accuracy penalty
