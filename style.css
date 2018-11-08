@@ -14,7 +14,7 @@ p {
 	line-height: 25px;
 }
 
-div {
+#header, #content, #output2 {
 	margin: auto;
     width: 50%;
     border: 3px solid green;
