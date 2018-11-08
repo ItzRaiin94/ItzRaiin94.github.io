@@ -17,7 +17,7 @@
 				const acc = document.getElementById("accuracy").value;
 
 				//convert sr to pp
-				let final = Math.pow(((5 * (sr) / 0.0049) - 4), 2) / 100000;
+				let final = Math.pow((((5 * sr) / 0.0049) - 4), 2) / 100000;
 
 				//length bonus
 				let bonus_len = (0.95 + 0.4 * Math.min(1.0, mc / 3000.0)) + (mc > 3000 ? Math.log10(mc / 3000.0) * 0.5 : 0.0);
